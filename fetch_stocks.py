@@ -13,8 +13,10 @@ import time
 import urllib.request
 import urllib.parse
 from datetime import datetime
+from pathlib import Path
 
-STOCKS_FILE = "/Users/ricardo.chen/.qclaw/skills/stock-monitor/stocks.json"
+BASE_DIR = Path(__file__).resolve().parent
+STOCKS_FILE = BASE_DIR / "stocks.json"
 
 def fetch_sina_batch(symbols):
     """新浪财经批量获取 A股/美股，返回 {symbol: price}"""

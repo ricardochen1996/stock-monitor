@@ -15,7 +15,7 @@
 
 1. 运行脚本获取股票数据：
    ```
-   python3 /Users/ricardo.chen/.qclaw/skills/stock-monitor/fetch_stocks.py
+   python3 ./fetch_stocks.py
    ```
 
 2. 将输出结果**直接返回给用户**，不做任何总结或额外解读
@@ -29,7 +29,7 @@
 ## 股票列表
 
 股票代码和买卖点配置保存在：
-`/Users/ricardo.chen/.qclaw/skills/stock-monitor/stocks.json`
+`./stocks.json`
 
 如需修改股票池或买卖点，直接编辑该 JSON 文件。
 

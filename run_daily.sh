@@ -1,7 +1,9 @@
 #!/bin/bash
 # 股票监控定时任务 - 直接输出到文件，用户自行查看
 
-cd /Users/ricardo.chen/.qclaw/workspace/stock-monitor
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+mkdir -p reports
 
 # 获取当前日期
 DATE=$(date +"%Y-%m-%d")
